@@ -21,7 +21,7 @@ class conexion {
     
     }
     public function conexionprincipal(){
-    $dbconn = pg_connect("host=localhost dbname=publishing user=www password=foo")
+    $dbconn = pg_connect("host=".$url." dbname=".$data." user=".$user." password=".$contra."")
     or die('No se ha podido conectar: ' . pg_last_error());
     return  $dbconn;
     }
