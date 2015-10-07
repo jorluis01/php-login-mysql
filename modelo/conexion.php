@@ -23,7 +23,7 @@ class conexion {
     public function conexionprincipal(){
    
     $dbconn = mysqli_connect($this->url, $this->user, $this->contra, $this->data)
-    or die('No se ha podido conectar: ' .  mysqli_error());
+    or die('No se ha podido conectar: ' .  mysqli_error());  //conexion de mi base de datos 
     
     return  $dbconn;
     
