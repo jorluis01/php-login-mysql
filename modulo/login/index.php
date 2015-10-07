@@ -1,6 +1,7 @@
 
 
 <?php
+
 $inicio=new htmlprincipal();
 $inicio->inicio();
 include_once  ''.$inicio->carpeta_proyecto().'modulo/login/vista/login.php';
