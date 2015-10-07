@@ -7,7 +7,7 @@ class jslogin{
     } 
     public function jsusados($direccion){
         ?> 
- <script src="<?php echo $direccion ?>php-login/modulo/login/controlador/login.js" type="text/javascript"></script>
+ <script src="<?php echo $direccion ?>modulo/login/controlador/login.js" type="text/javascript"></script>
         
         <?php  //esto me sirve para llamar js especificos para mi modulo
     }

@@ -3,8 +3,8 @@
 <?php
 $inicio=new htmlprincipal();
 $inicio->inicio();
-include_once  ''.$inicio->carpeta_proyecto().'php-login/modulo/login/vista/login.php';
- include_once  ''.$inicio->carpeta_proyecto().'php-login/modulo/login/controlador/js.php';
+include_once  ''.$inicio->carpeta_proyecto().'modulo/login/vista/login.php';
+ include_once  ''.$inicio->carpeta_proyecto().'modulo/login/controlador/js.php';
 
 $login=new login();
 $login->inline();
