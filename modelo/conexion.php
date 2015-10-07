@@ -12,23 +12,25 @@
  * @author DR ROBERTO
  */
 class conexion {
+    private $url="localhost";
+    private $contra="";
+    private $user="root";
+    private $data="datos";
     
     public function __construct() {
     
     }
     public function conexionprincipal(){
-    $url="ec2-54-197-241-239.compute-1.amazonaws.com";
-   $contra="zTEH0ePQCWzpNI1ow6W1iVTZGu";
-     $user="rbxkyusgfryans";
-    $data="d6h3hnkdi41pd7";
-    $dbconn="";
-    $dbconn = pg_connect("host=".$url." dbname=".$data." user=".$user." password=".$contra."")
-    or die('No se ha podido conectar: ' . pg_last_error());
+   
+    $dbconn = mysqli_connect($this->url, $this->user, $this->contra, $this->data)
+    or die('No se ha podido conectar: ' .  mysqli_error());
     
     return  $dbconn;
+    
     }
     public function finalconexion(){
-        pg_close(conexionprincipal());
+        mysqli_close($this->conexionprincipal());
+        
     }
     
     
