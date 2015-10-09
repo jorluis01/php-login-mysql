@@ -1,6 +1,5 @@
 <?php
-$formulario=new formulario();
-$formulario->formulario();
+
 
 class formulario {
     public function __construct() {
@@ -10,7 +9,7 @@ class formulario {
     public function formulario(){
         
         ?>
-<form >
+<form id="for-login" >
     <label  >NOMBRE</label> 
     <input type="text" class="form-control" name="nom_usr">
     <label  >APELLIDO</label> 
@@ -33,7 +32,8 @@ class formulario {
     <div class=" input-group-addon ">@</div> </div>
     <label >CONTRASEÑA</label> 
     <input type="password" class="form-control" name="contra_usr">
-           
+    <button class="form-control" onclick="formulario_registro(); return false">Registrar</button>
+    <button class="form-control" onclick="window.location='../../' ; return false ">Cancelar</button>
     
 </form>
 <?php

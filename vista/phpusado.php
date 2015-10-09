@@ -5,7 +5,7 @@ class htmlprincipal{
     //mi codigo sin la necesidad de volver a escribir, solo lo llamo como una funcion de una 
    //clase de php 
     
-    public function _construct(){
+    public function __construct(){
         
         
     } 
